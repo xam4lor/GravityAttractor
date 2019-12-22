@@ -35,7 +35,7 @@ class Particle {
                     .mult (-1/2 * getCustomConfig().constants.G * everyObjects[i].mass)
             );
         }
-        this.vel.add(this.acc.limit(0, 10).mult(dt));
+        this.vel.add(this.acc.limit(0, 1000).mult(dt));
 
         // Handle the track of the motion of the Particle
         if(this.showTrack) {
